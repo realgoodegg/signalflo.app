@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy Notice
-permalink: /privacy/
+# permalink: /privacy/
 ---
 
 Effective Date: February 2025
