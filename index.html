@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            /* Ensure all content is centered */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .icon {
+            width: 120px;
+            height: 120px;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon img, .icon svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .header-content {
+            /* New wrapper for title area */
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #888;
+            margin-bottom: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            width: 100%;
+        }
+
+        .feature {
+            background-color: #252525;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .feature h2 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+        .download-btn {
+            display: inline-block;
+            margin: 2rem 0;
+            transition: transform 0.2s;
+            width: 240px; /* Set fixed width for the button container */
+            height: 60px; /* Set fixed height for the button container */
+        }
+
+        .download-btn img, .download-btn svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <img src="sf_website_icon.svg" alt="Your Icon Description">
+        </div>
+        
+        <div class="header-content">
+            <h1>Signalflo</h1>
+            <p class="tagline">Transform Any Space Into Your Deep Space</p>
+        </div>
+        
+        <a href="https://apps.apple.com/app/signalflo/id6740144400" class="download-btn">
+            <img src="appstore_badge.svg" alt="Download on the App Store">
+        </a>
+
+        <div class="features">
+            <div class="feature">
+                <h2>Feature One</h2>
+                <p>Experience seamless synchronization across all your devices. Pick up right where you left off, every time.</p>
+            </div>
+            
+            <div class="feature">
+                <h2>Feature Two</h2>
+                <p>Transform your workflow with our innovative approach to content management and organization.</p>
+            </div>
+            
+            <div class="feature">
+                <h2>Feature Three</h2>
+                <p>Connect and share with others through our integrated platform designed for collaboration.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
