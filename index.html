@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signalflo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            /* margin: 0;
-            padding: 0;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6; */
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
+            background-color: #252323;
             color: #ffffff;
             font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
@@ -24,7 +19,6 @@
             max-width: 600px;
             margin: 0 auto;
             padding: 2rem;
-            /* Ensure all content is centered */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -38,6 +32,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            filter: drop-shadow(0px 10px 8px rgba(11, 11, 11, 0.5)); /* Add shadow */
         }
 
         .icon img, .icon svg {
@@ -53,23 +48,22 @@
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 3vw; /* Responsive font size */
             margin: 1rem 0 0.5rem 0;
-            /* color: #ffffff; */
             color: #ffbff5;
             text-align: center;
             width: 100%;
         }
 
         h4 {
-            font-size: 1.0rem;
+            font-size: 1.0vw; /* Responsive font size */
             margin-top: 0;
             margin-bottom: 0.0rem;
             color: #ffffff;
         }
 
         .tagline {
-            font-size: 1.5rem;
+            font-size: 1.6vw; /* Responsive font size */
             color: #888;
             font-weight: bold;
             margin-top: 0.0rem;
@@ -79,10 +73,10 @@
         }
 
         .subheading {
-            font-size: 0.8rem;
+            font-size: 1.0vw; /* Responsive font size */
             color: #888;
             font-weight: bold;
-            margin-top: 0.2rem;
+            margin-top: 0.0rem;
             margin-bottom: 0.2rem;
             text-align: center;
             width: 100%;
@@ -91,10 +85,23 @@
         .divider {
             border: 0;
             height: 4px;
-            background: #fc71e7; /* Darker gray that will be visible against dark background */
+            background: #fc71e7;
+            margin: 0.0rem 0;
+            width: 100%;
+            opacity: 0.5;
+        }
+
+        .horizontal-images {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
             margin: 2rem 0;
-            width: 100%; /* Add width to ensure it spans across */
-            opacity: 0.5; /* Add some transparency */
+        }
+
+        .horizontal-images img {
+            width: 30%;
+            height: auto;
+            margin: 1rem;  /* This adds margin around all sides of each image */
         }
 
         .features {
@@ -106,14 +113,14 @@
         }
 
         .feature {
-            background-color: #252525;
+            /* background-color: #252525; */
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: left;
         }
 
-        .feature h3 {
+        .feature h4 {
             color: #ffffff;
             margin-top: 0;
         }
@@ -126,8 +133,8 @@
             display: inline-block;
             margin: 0.5rem 0;
             transition: transform 0.2s;
-            width: 200px; /* Set fixed width for the button container */
-            height: 40px; /* Set fixed height for the button container */
+            width: 200px;
+            height: 40px;
         }
 
         .download-btn img, .download-btn svg {
@@ -140,6 +147,40 @@
             transform: translateY(-2px);
             cursor: pointer;
         }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: first baseline; /* Align items to the bottom */
+            gap: 1rem;
+            margin: 0.5rem 0;
+            width: 100%
+        }
+
+        .social-media a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .social-media a:hover {
+            color: #fc71e7;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 8vw; /* Adjust font size for smaller screens */
+            }
+            h4 {
+                font-size: 4vw;
+            }
+            .tagline {
+                font-size: 5vw;
+            }
+            .subheading {
+                font-size: 3vw;
+            }
+        }
     </style>
 </head>
 <body>
@@ -151,11 +192,11 @@
         <div class="header-content">
             <h1>Signalflo</h1>
             <p class="tagline">Welcome to Your Deep Space</p>
-            <p class="tagline">Sound Signal Generator For Focus and Calm</p>
+            <!-- <p class="tagline">Sound Signal Generator For Focus and Calm</p> -->
         </div>
         
         <a href="https://apps.apple.com/app/signalflo/id6740144400" class="download-btn">
-            <img src="appstore_badge.svg" alt="Download on the App Store">
+            <img src="appstore_badge_light.svg" alt="Download on the App Store">
         </a>
 
         <div class="header-content">
@@ -163,11 +204,24 @@
 
         </div>
 
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <!-- <span>Say Hello @</span> -->
+            <a href="mailto:hello@signalflo.app" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/signalflo.app/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
         <hr class="divider">
+
+        <!-- <div class="image-container horizontal-images">
+            <img src="phone_image_02.svg" alt="Description of the image" style="width:30%; height:auto;">
+            <img src="phone_image_01.svg" alt="Description of the image" style="width:30%; height:auto;">
+            <img src="phone_image_03.svg" alt="Description of the image" style="width:30%; height:auto;">
+        </div> -->
 
         <div class="features">
             <div class="feature">
-                <h4>Brown Noise Sound Signal Generator</h4>
+                <h4>Sound Signal Engine For Deep Work</h4>
                 <p>
                     SignalFlo generates authentic Brown Noise in real-time through its powerful signal engine. Whether you're working, studying, or seeking calm, SignalFlo's intuitive interface lets you shape the perfect acoustic environment.
                 </p>
