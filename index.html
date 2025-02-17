@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>Signalflo</title>
     <style>
         body {
-            margin: 0;
+            /* margin: 0;
             padding: 0;
             background-color: #1a1a1a;
             color: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6; */
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 600px;
             margin: 0 auto;
             padding: 2rem;
             /* Ensure all content is centered */
@@ -28,7 +34,7 @@
         .icon {
             width: 120px;
             height: 120px;
-            margin: 2rem auto;
+            margin: 0rem auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -41,31 +47,59 @@
         }
 
         .header-content {
-            /* New wrapper for title area */
             width: 100%;
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
         h1 {
             font-size: 2.5rem;
-            margin: 1rem 0;
-            color: #ffffff;
+            margin: 1rem 0 0.5rem 0;
+            /* color: #ffffff; */
+            color: #ffbff5;
             text-align: center;
             width: 100%;
+        }
+
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 0;
+            margin-bottom: 0.0rem;
+            color: #ffffff;
         }
 
         .tagline {
             font-size: 1.5rem;
             color: #888;
-            margin-bottom: 2rem;
+            font-weight: bold;
+            margin-top: 0.0rem;
+            margin-bottom: 0.0rem;
             text-align: center;
             width: 100%;
         }
 
+        .subheading {
+            font-size: 0.8rem;
+            color: #888;
+            font-weight: bold;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .divider {
+            border: 0;
+            height: 4px;
+            background: #fc71e7; /* Darker gray that will be visible against dark background */
+            margin: 2rem 0;
+            width: 100%; /* Add width to ensure it spans across */
+            opacity: 0.5; /* Add some transparency */
+        }
+
         .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 2rem;
             margin-top: 4rem;
             width: 100%;
@@ -79,16 +113,21 @@
             text-align: left;
         }
 
-        .feature h2 {
-            color: #ffd700;
+        .feature h3 {
+            color: #ffffff;
             margin-top: 0;
         }
+        .feature p {
+            color: #888;
+            margin-top: 0.5rem;
+        }
+
         .download-btn {
             display: inline-block;
-            margin: 2rem 0;
+            margin: 0.5rem 0;
             transition: transform 0.2s;
-            width: 240px; /* Set fixed width for the button container */
-            height: 60px; /* Set fixed height for the button container */
+            width: 200px; /* Set fixed width for the button container */
+            height: 40px; /* Set fixed height for the button container */
         }
 
         .download-btn img, .download-btn svg {
@@ -111,27 +150,42 @@
         
         <div class="header-content">
             <h1>Signalflo</h1>
-            <p class="tagline">Transform Any Space Into Your Deep Space</p>
+            <p class="tagline">Welcome to Your Deep Space</p>
+            <p class="tagline">Sound Signal Generator For Focus and Calm</p>
         </div>
         
         <a href="https://apps.apple.com/app/signalflo/id6740144400" class="download-btn">
             <img src="appstore_badge.svg" alt="Download on the App Store">
         </a>
 
+        <div class="header-content">
+            <p class="subheading">iOS 18 or Later</p>
+
+        </div>
+
+        <hr class="divider">
+
         <div class="features">
             <div class="feature">
-                <h2>Feature One</h2>
-                <p>Experience seamless synchronization across all your devices. Pick up right where you left off, every time.</p>
+                <h4>Brown Noise Sound Signal Generator</h4>
+                <p>
+                    SignalFlo generates authentic Brown Noise in real-time through its powerful signal engine. Whether you're working, studying, or seeking calm, SignalFlo's intuitive interface lets you shape the perfect acoustic environment.
+                </p>
             </div>
             
             <div class="feature">
-                <h2>Feature Two</h2>
+                <h4>Feature Two</h4>
                 <p>Transform your workflow with our innovative approach to content management and organization.</p>
             </div>
+
+            <hr class="divider">
             
             <div class="feature">
-                <h2>Feature Three</h2>
-                <p>Connect and share with others through our integrated platform designed for collaboration.</p>
+                <h4>Privacy Policy</h4>
+                <p>
+                    Signalflo values your privacy. This app does not collect, store, or share any personal data, analytics, or user activity. All app functionality operates entirely on your device, ensuring complete privacy.
+                    If you have any questions about this policy, feel free to contact us at hello@signalflo.app.
+                </p>
             </div>
         </div>
     </div>
